@@ -16,7 +16,7 @@
     var myFirebaseRef = new Firebase("http://burning-fire-6341.firebaseio.com/");
     var audio = document.getElementById("au");
     myFirebaseRef.on("value", function(snapshot) {
-        console.log(snapshot.val()[0]+","+snapshot.val()[1]); 
+        console.log(snapshot.val()[0]+","+snapshot.val()[1]);
         document.getElementById('status').innerHTML=snapshot.val()[1];
         if (snapshot.val()[0]==='#EANF#' && snapshot.val()[1]==='#EANF#'){
             //http://stackoverflow.com/questions/9419263/playing-audio-with-javascript
@@ -24,6 +24,7 @@
             audio.loop=true;
             audio.play();
             alert('fire');
+            audio.pause();
             audio.loop=false;
         }
     });
