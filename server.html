@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>server</title>
+</head>
+<body>
+<form method="get" id="frm">
+    badcaptcha:<input type="text" size="12" name="bca" id="bca" value=""><br>
+    busy:<input type="text" size="12" name="bda" id="bda" value="">
+    <input type="submit" value="recognize" id="btn1">
+</form>
+
+<script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+<script>
+    var myFirebaseRef = new Firebase("http://burning-fire-6341.firebaseio.com/");
+    function updateStatus(a, b){
+        myFirebaseRef.set([a,b]);
+        return null;
+    }
+    frm.onsubmit=function(){
+        updateStatus(bca.value,bda.value);
+    }
+</script>
+</body>
+</html>

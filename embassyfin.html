@@ -1,0 +1,531 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+    System Zdalnej Rejestracji
+</title><link href="System%20Zdalnej%20Rejestracji_files/NowyLayout.css" rel="stylesheet" type="text/css"><link href="System%20Zdalnej%20Rejestracji_files/CookiePolicy.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<script src="System%20Zdalnej%20Rejestracji_files/addLoadEvent.js" type="text/javascript"></script>
+<script src="System%20Zdalnej%20Rejestracji_files/cookiesPolicy.js" type="text/javascript"></script>
+<script type="text/javascript">
+    addLoadEvent(function () {
+        var cookiesPolicy = getCookie("eKonsulatCookiesPolicyClosed");
+        if (cookiesPolicy == null || cookiesPolicy == "") {
+            document.getElementById('cookiePolicy').style.display = 'inline-block';
+        }
+    })
+</script>
+<div style="display: inline-block;" id="cookiePolicy">
+    <div id="cookieContent">
+        <div id="cookieInfo"><span id="cookieInfoText">This website uses
+cookies files. If you leave the web browser cookies on, you enable the 
+usage of the cookies files. You can decline the usage of cookies files 
+by changing the settings in your browser. More information on cookies 
+files is available in <a href="https://secure.e-konsulat.gov.pl/PolitykiCookies/Angielski.docx" style="TEXT-DECORATION: underline">Cookies Policy</a>.</span></div>
+        <div id="cookieClose">
+            <img alt="close" src="System%20Zdalnej%20Rejestracji_files/close.png" onclick="document.getElementById('cookiePolicy').style.display = 'none'; setCookie('eKonsulatCookiesPolicyClosed', 'true', 3650, '');">
+        </div>
+    </div>
+</div>
+<form method="post" action="RejestracjaTerminu.aspx?IDUSLUGI=1&amp;IDPlacowki=89" id="form1" autocomplete="off">
+    <div class="aspNetHidden">
+        <input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+        <input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+        <input name="__LASTFOCUS" id="__LASTFOCUS" value="" type="hidden">
+        <input name="__VIEWSTATE" id="__VIEWSTATE" value="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" type="hidden">
+    </div>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        var theForm = document.forms['form1'];
+        if (!theForm) {
+            theForm = document.form1;
+        }
+        function __doPostBack(eventTarget, eventArgument) {
+            if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                theForm.__EVENTTARGET.value = eventTarget;
+                theForm.__EVENTARGUMENT.value = eventArgument;
+                theForm.submit();
+            }
+        }
+        //]]>
+    </script>
+
+
+    <script src="System%20Zdalnej%20Rejestracji_files/WebResource.js" type="text/javascript"></script>
+
+
+    <script src="System%20Zdalnej%20Rejestracji_files/ScriptResource.js" type="text/javascript"></script>
+    <script src="System%20Zdalnej%20Rejestracji_files/ScriptResource_002.js" type="text/javascript"></script>
+    <script src="System%20Zdalnej%20Rejestracji_files/ScriptResource.axd" type="text/javascript"></script>
+    <script src="System%20Zdalnej%20Rejestracji_files/ScriptResource_002.axd" type="text/javascript"></script>
+    <div class="aspNetHidden">
+
+        <input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="AF68AA49" type="hidden">
+        <input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="ZpFXIkQVZOG1Y9vDm8Vx9pM7AmsvvZ3s1TrBNJyXxYhXpKqs9vNcgklGTwYqmXjBW/gJ0wrY+7e2rjND5nNiXk0e6xVXfy6URg47CMiom3rtahTfoAFqaXfmi/gKLo3vMRbjz4UMm0Q295kY3S3XXwbV18sivrtfoJz1Lpz9GBbfvt/yTCxyizDMh4mv+lwzuCCzPQRmG4wMPXr51dsu8C/K9Mi8E0oZBRf2EmYA2h3mp5Izgl29cs6vlIpKXbCaxPwySIEe4Vwu/9ukWVdki8jXugmVVANPelj7i2xbZkmHbB9XIEN4gFYBJtoA23RAqdawogOnl2SnnF59rNGWXA==" type="hidden">
+    </div>
+    <div style="width: 100%; text-align: center; margin-left: auto; margin-right: auto;">
+        <table id="tab_indywidualny" class="TABELA_MENU" cellpadding="0" cellspacing="0" width="1020px">
+            <tbody><tr>
+                <td style="height: 40px; text-align: left;" colspan="3">
+                    <a id="EKONSULAT_Hyperlink1" class="HL_SZARY" href="https://secure.e-konsulat.gov.pl/NotaPrawna/NotaPrawna.aspx" style="margin-top: 3px;">Terms and conditions</a>
+
+
+
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 110px; text-align: left; vertical-align: bottom;" colspan="3">
+                    <table style="height: 110px; width: 100%;">
+                        <tbody><tr style="height: 10px;">
+                            <td style="width: 10px;">
+                                <br>
+                            </td>
+                            <td>
+                                <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <br>
+                            </td>
+                            <td style="text-align: left; vertical-align: bottom;">
+                                <a id="HL_EKonsulat" class="EKONSULAT_MASTER" href="https://secure.e-konsulat.gov.pl/Default.aspx">e-Konsulat</a>
+                            </td>
+                        </tr>
+                        <tr style="height: 3px;">
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        </tbody></table>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 20px;">
+                </td>
+                <td style="text-align: right; width: 850px;">
+                    <table style="width: 100%; margin: 0px 0px 0px 0px;" cellpadding="0" cellspacing="0">
+                        <tbody><tr>
+                            <td>
+                                <span id="ctrlSiteMapPath" class="GLOWNA_NavBar"><a href="#ctrlSiteMapPath_SkipLink" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Skip Navigation Links</a><span><a title="Home page of application" href="https://secure.e-konsulat.gov.pl/default.aspx" style="color:White;">Home page</a></span><span> &gt; </span><span><a href="https://secure.e-konsulat.gov.pl/informacyjne/placowka.aspx?IDPlacowki=89" style="color:White;">Kyiv</a></span><span> &gt; </span><span><a style="color:White;">Visa</a></span><span> &gt; </span><span><a style="color:White;">National Visa  - Register form</a></span><span> &gt; </span><span style="color:White;">Reservation of appointment</span><a id="ctrlSiteMapPath_SkipLink"></a></span>
+                            </td>
+                            <td style="text-align: right;">
+                                <span id="EKONSULAT_Etykieta1" class="ETYKIETA_BIALA">Language version</span>
+                            </td>
+                        </tr>
+                        </tbody></table>
+                </td>
+                <td style="text-align: right; height: 20px; width: 120px;">
+                    <select name="ctl00$ddlWersjeJezykowe" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ddlWersjeJezykowe\',\'\')', 0)" id="ddlWersjeJezykowe" style="width:100px;margin-right: 10px;">
+                        <option value="1">Polska</option>
+                        <option selected="selected" value="2">English</option>
+                        <option value="17">Русская</option>
+                        <option value="19">Українська</option>
+                        <option value="20">Deutsch</option>
+                        <option value="21">Français</option>
+                        <option value="22">Español</option>
+                        <option value="24">Português</option>
+                        <option value="25">Türk</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="height: 70px;">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="height: 520px; vertical-align: top;">
+                    <table id="tabWewnetrzna" cellpadding="0" cellspacing="0">
+                        <tbody><tr>
+                            <td style="width: 270px; vertical-align: top;">
+                                <div id="divMenu" style="width: 270px; height: auto; margin-top: 25px;">
+
+                                    <script src="System%20Zdalnej%20Rejestracji_files/are_cookies_enabled.js" type="text/javascript"></script>
+                                    <script type="text/javascript">
+                                        addLoadEvent(function () {
+                                            if (are_cookies_enabled()) {
+                                                document.getElementById('_118cf677f9d7bcf_tabWewnetrznaMenu').style.visibility = 'visible';
+                                            }
+                                        })
+                                    </script>
+                                    <table id="_118cf677f9d7bcf_tabWewnetrznaMenu" style="text-align: left; width: 270px; table-layout: fixed; visibility: visible;" cellpadding="0" cellspacing="0">
+                                        <tbody><tr>
+                                            <td style="width: 34px; height: 5px;">
+                                                <br>
+                                            </td>
+                                            <td style="width: 35px; height: 5px;">
+                                                <br>
+                                            </td>
+                                            <td style="width: 165px; height: 5px;">
+                                                <br>
+                                            </td>
+                                            <td style="width: 35px; height: 5px;">
+                                                <br>
+                                            </td>
+                                        </tr>
+                                        <tr style="visibility: hidden;">
+                                            <td style="width: 35px; height: 30px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                            <td style="width: 200px" colspan="2" class="TDMENUODSTEP">
+                                                <a id="_118cf677f9d7bcf_EKONSULAT_Hyperlink1" class="POZYCJA_MENU" href="https://secure.e-konsulat.gov.pl/Default.aspx">Diplomatic missions</a>
+                                            </td>
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                        </tr>
+                                        <tr id="_118cf677f9d7bcf_ROW_wizyOgolnie">
+                                            <td style="width: 35px; height: 30px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                            <td style="width: 200px" colspan="2" class="TDMENUODSTEP">
+                                                <span id="_118cf677f9d7bcf_lblWiza" class="POZYCJA_MENU">Visa</span>
+                                            </td>
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                        </tr>
+                                        <tr id="_118cf677f9d7bcf_ROW_wizaKrajowa">
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                            <td style="width: 165px;" class="TDMENUODSTEP">
+                                                <a id="_118cf677f9d7bcf_hlRejestracjaKrajowa" class="PODPOZYCJA_MENU" href="https://secure.e-konsulat.gov.pl/Uslugi/RejestracjaTerminu.aspx?IDUSLUGI=1&amp;IDPlacowki=89">National Visa  - Register form</a>
+                                            </td>
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                        </tr>
+                                        <tr id="_118cf677f9d7bcf_ROW_wizaKrajowa_WYPELNIJ">
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                            <td style="width: 165px;" class="TDMENUODSTEP">
+                                                <a id="_118cf677f9d7bcf_hlWypelnienieKrajowa" class="PODPOZYCJA_MENU" href="https://secure.e-konsulat.gov.pl/Uslugi/Wypelnij.aspx?IDUSLUGI=1&amp;IDPlacowki=89">National Visa  - Fill in form</a>
+                                            </td>
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                        </tr>
+                                        <tr id="_118cf677f9d7bcf_ROW_wizaSchengen">
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                            <td style="width: 165px;" class="TDMENUODSTEP">
+                                                <a id="_118cf677f9d7bcf_hlRejestracjaSchengen" class="PODPOZYCJA_MENU" href="https://secure.e-konsulat.gov.pl/Uslugi/RejestracjaTerminu.aspx?IDUSLUGI=8&amp;IDPlacowki=89">Schengen Visa - Register form</a>
+                                            </td>
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                        </tr>
+                                        <tr id="_118cf677f9d7bcf_ROW_wizaSchengen_WYPELNIJ">
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                            <td style="width: 165px;" class="TDMENUODSTEP">
+                                                <a id="_118cf677f9d7bcf_hlWypelnienieSchengen" class="PODPOZYCJA_MENU" href="https://secure.e-konsulat.gov.pl/Uslugi/Wypelnij.aspx?IDUSLUGI=8&amp;IDPlacowki=89">Schengen Visa - Fill in form</a>
+                                            </td>
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                &nbsp;
+                                            </td>
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                &nbsp;
+                                            </td>
+                                            <td style="width: 165px;" class="TDMENUODSTEP">
+                                                &nbsp;
+                                            </td>
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                        <tr id="_118cf677f9d7bcf_ROW_wizytyOgolnie">
+                                            <td style="width: 15px; height: 30px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                            <td style="width: 200px" colspan="2" class="TDMENUODSTEP">
+                                                <span id="_118cf677f9d7bcf_lblWizyty" class="POZYCJA_MENU">Visits</span>
+                                            </td>
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                        </tr>
+                                        <tr id="_118cf677f9d7bcf_ROW_wizytyPaszportowe">
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                            <td style="width: 165px;" class="TDMENUODSTEP">
+                                                <a id="_118cf677f9d7bcf_hlWizytyPaszportowe" class="PODPOZYCJA_MENU" href="https://secure.e-konsulat.gov.pl/Wizyty/Paszportowe/RejestracjaTerminuWizytyPaszportowej.aspx?IDPlacowki=89">Passport matters</a>
+                                            </td>
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                        </tr>
+                                        <tr id="_118cf677f9d7bcf_ROW_wizytyKartaPolaka">
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                            <td style="width: 165px;" class="TDMENUODSTEP">
+                                                <a id="_118cf677f9d7bcf_hlKartaPolaka" class="PODPOZYCJA_MENU" href="https://secure.e-konsulat.gov.pl/Uslugi/RejestracjaTerminu.aspx?IDUSLUGI=7&amp;IDPlacowki=89">Polish Card</a>
+                                            </td>
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                        </tr>
+                                        <tr id="_118cf677f9d7bcf_rowAnulowanieWizyty">
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                            <td style="width: 165px;" class="TDMENUODSTEP">
+                                                <a id="_118cf677f9d7bcf_hlAnulujWizyte" class="PODPOZYCJA_MENU" href="https://secure.e-konsulat.gov.pl/Wizyty/Paszportowe/AnulowanieWizyty.aspx?IDPlacowki=89">Cancel appointment</a>
+                                            </td>
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                &nbsp;
+                                            </td>
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                &nbsp;
+                                            </td>
+                                            <td style="width: 165px;" class="TDMENUODSTEP">
+                                                &nbsp;
+                                            </td>
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                &nbsp;
+                                            </td>
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                &nbsp;
+                                            </td>
+                                            <td style="width: 165px;" class="TDMENUODSTEP">
+                                                &nbsp;
+                                            </td>
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                        <tr style="display: none;">
+                                            <td style="width: 15px; height: 30px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                            <td style="width: 200px" colspan="2" class="TDMENUODSTEP">
+                                                <a id="_118cf677f9d7bcf_EKONSULAT_Hyperlink9" class="POZYCJA_MENU" href="https://secure.e-konsulat.gov.pl/Default.aspx">Consular out of office hours</a>
+                                            </td>
+                                            <td style="width: 35px;" class="TDMENUODSTEP">
+                                                <br>
+                                            </td>
+                                        </tr>
+                                        </tbody></table>
+
+                                </div>
+                            </td>
+                            <td id="tdTabWewnetrzna" style="width: 650px; vertical-align: top;">
+
+
+
+                                <script type="text/javascript">
+                                    function cbDzienGodzina_onChange(obj) {
+                                        if (obj.value == -1)
+                                            document.getElementById('cp_btnRezerwuj').disabled = true;
+                                        else
+                                            document.getElementById('cp_btnRezerwuj').disabled = false;
+                                    }
+                                </script>
+                                <script src="System%20Zdalnej%20Rejestracji_files/are_cookies_enabled.js" type="text/javascript"></script>
+                                <script type="text/javascript">
+                                    addLoadEvent(function () {
+                                        if (are_cookies_enabled()) {
+                                            document.getElementById('cp_tabFormularz').style.visibility = 'visible';
+                                        }
+                                    })
+                                </script>
+                                <div style="text-align: center; font-size: large; color: Red;">
+                                    <noscript>
+                                        Rejestracja wniosków wymaga włączenia obsługi javascript i plików cookie.
+                                    </noscript>
+                                    <script type="text/javascript">
+                                        if (!are_cookies_enabled()) {
+                                            document.write('Rejestracja wniosków wymaga włączenia obsługi javascript i plików cookie.');
+                                        }
+                                    </script>
+                                </div>
+                                <span id="cp_eventOrderValidation"></span>
+                                <div id="cp_NoBotID">
+                                    <span id="cp_NoBotID_NoBotID_NoBotLabel"></span><input value="426" name="ctl00$cp$NoBotID$NoBotID_NoBotExtender_ClientState" id="cp_NoBotID_NoBotID_NoBotExtender_ClientState" type="hidden"><div id="cp_NoBotID_pcnb" style="height:395px;width:31px;visibility:hidden;position:absolute;">
+
+                                </div>
+                                </div>
+                                <table id="cp_tabFormularz" class="biale_tlo" style="visibility: visible;" width="650">
+                                    <tbody><tr>
+                                        <td colspan="2" style="text-align: center;">
+                                            <table id="cp_krokiRejestracji_tabFormularz" class="biale_tlo" width="650">
+                                                <tbody><tr>
+                                                    <td colspan="2">
+                                                        <br>
+
+                                                    </td>
+                                                </tr>
+                                                <tr id="cp_krokiRejestracji_IndywidualniInfo1">
+                                                    <td width="100">
+                                                        <img src="System%20Zdalnej%20Rejestracji_files/Krok1.gif">
+                                                    </td>
+                                                    <td class="ramka_dol_wniosek" width="650">
+                <span id="cp_krokiRejestracji_lblInfoKrok1"><p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><strong style="mso-bidi-font-weight: normal;"><span lang="EN-US"><span style="font-size: small;"><span style="font-family: Times New Roman;">Contacting a consular post to determine the required documents</span></span></span></strong></p> <p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><span lang="EN-US"><span style="font-family: Times New Roman; font-size: small;">&nbsp;</span></span></p> <p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><span lang="EN-US"><span style="font-family: Times New Roman; font-size: small;">The visa application has to be submitted together with 2 biometric photos,<span style="mso-spacerun: yes;">&nbsp; </span>a travel document and any other additional documents individually specified by the consul. </span></span></p> <p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><span lang="EN-US"><span style="font-family: Times New Roman; font-size: small;">&nbsp;</span></span></p> <p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><span lang="EN-US"><span style="font-family: Times New Roman; font-size: small;">Before filling in the application, you are advised to contact the consular post where you intend to<span style="mso-spacerun: yes;">&nbsp; </span>submit the visa application, to find out what additional documents will be required in your particular case. </span></span></p> <p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><span lang="EN-US"><span style="font-family: Times New Roman; font-size: small;">&nbsp;</span></span></p> <p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><span lang="EN-US"><span style="font-family: Times New Roman; font-size: small;">Note: during the submission of<span style="mso-spacerun: yes;">&nbsp; </span>your application,<span style="mso-spacerun: yes;">&nbsp; </span>the consul or other authorized<span style="mso-spacerun: yes;">&nbsp; </span>employee
+ of the consular post, after examining the documents attached to the 
+application, may decide that additional documents are required. </span></span></p></span>
+                                                    </td>
+                                                </tr>
+                                                <tr id="cp_krokiRejestracji_IndywidualniInfo2">
+                                                    <td width="100">
+                                                        <img src="System%20Zdalnej%20Rejestracji_files/Krok2.gif">
+                                                    </td>
+                                                    <td class="ramka_dol_wniosek" width="650">
+                <span id="cp_krokiRejestracji_lblInfoKrok2"><p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><strong style="mso-bidi-font-weight: normal;"><span lang="EN-US"><span style="font-size: small;"><span style="font-family: Times New Roman;">Making your appointment </span></span></span></strong></p> <p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><span lang="EN-US"><span style="font-family: Times New Roman; font-size: small;">&nbsp;</span></span></p> <p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><span lang="EN-US"><span style="font-family: Times New Roman; font-size: small;">Select a convenient date for submitting your application and additional documents. </span></span></p> <p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><span lang="EN-US"><span style="font-family: Times New Roman; font-size: small;">&nbsp;</span></span></p> <p><span style="font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: PL; mso-bidi-language: AR-SA;" lang="EN-US">Note:
+ failure to fill in the application within one hour of choosing the 
+appointment date will result in annulment of the application.</span></p></span>
+                                                    </td>
+                                                </tr>
+                                                <tr id="cp_krokiRejestracji_IndywidualniInfo3">
+                                                    <td width="100">
+                                                        <img src="System%20Zdalnej%20Rejestracji_files/Krok3.gif">
+                                                    </td>
+                                                    <td class="ramka_dol_wniosek" width="650">
+                <span id="cp_krokiRejestracji_lblInfoKrok3"><p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><strong style="mso-bidi-font-weight: normal;"><span lang="EN-US"><span style="font-size: small;"><span style="font-family: Times New Roman;">Filling in and printing your application </span></span></span></strong></p> <p class="MsoNormal"><span lang="EN-US">Please fill in and print out your application</span><span lang="EN-US">.
+<span style="color:red">Fields No: 1, 2, 3, 5, 11, 13, 16, 31, 34 should
+ be filled in by using the Latin alphabet letters only (A, B, C, D, E, 
+F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z).</span></span><b><span style="font-size:8.5pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:red" lang="EN-US">
+</span></b><b><span style="color:red" lang="EN-US">Any erroneous entry shall make the application void.<o:p></o:p></span></b></p>
+<p class="MsoNormal"><span lang="EN-US">When filling in the Visa 
+Application Form, please make sure that a valid email address is 
+provided for future correspondence that may deem necessary.
+<b><span style="color:red">Other e-mail addresses than the one provided 
+in the&nbsp; VISA Application Form shall not be used when 
+contacting&nbsp; an applicant</span></b><span style="color:red">.</span></span></p></span>
+                                                    </td>
+                                                </tr>
+                                                <tr id="cp_krokiRejestracji_IndywidualniInfo4">
+                                                    <td width="100">
+                                                        <img src="System%20Zdalnej%20Rejestracji_files/Krok4.gif">
+                                                    </td>
+                                                    <td class="ramka_dol_wniosek" width="650">
+                                                        <span id="cp_krokiRejestracji_lblInfoKrok4"><p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><strong style="mso-bidi-font-weight: normal;"><span lang="EN-US"><span style="font-size: small;"><span style="font-family: Times New Roman;">Submitting your application</span></span></span></strong></p> <p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><span lang="EN-US"><span style="font-family: Times New Roman; font-size: small;">&nbsp;</span></span></p> <p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><span lang="EN-US"><span style="font-family: Times New Roman; font-size: small;">Please submit your printed application and additional documents on your appointment date, at the relevant consular post. </span></span></p></span>
+                                                    </td>
+                                                </tr>
+                                                <tr id="cp_krokiRejestracji_Tr1">
+                                                    <td width="100">
+                                                    </td>
+                                                    <td width="650">
+
+                                                    </td>
+                                                </tr>
+                                                </tbody></table>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" style="text-align: center;">
+                                            <table class="biale_tlo" style="margin: auto;" width="450px">
+                                                <tbody><tr>
+                                                    <td class="lewa_ramka" style="text-align: center;">
+                                                        <script type="text/javascript">
+                                                            //<![CDATA[
+                                                            Sys.WebForms.PageRequestManager._initialize('ctl00$cp$ScriptManager1', 'form1', [], [], [], 90, 'ctl00');
+                                                            //]]>
+                                                        </script>
+
+                                                        &nbsp;
+
+                                                        <table id="cp_tabListy" style="margin: auto;" width="400px">
+                                                            <tbody><tr>
+                                                                <td colspan="2" style="text-align: center">
+                                                                    <br>
+                                                                    <span id="cp_lblBrakTerminow" class="komunikat_blad">Lack of available dates to 2016-02-02</span>
+                                                                </td>
+                                                            </tr>
+                                                            </tbody></table>
+
+                                                        <br>
+                                                        &nbsp;
+                                                    </td>
+                                                </tr>
+                                                </tbody></table>
+                                        </td>
+                                    </tr>
+                                    </tbody></table>
+
+
+
+
+                            </td>
+                        </tr>
+                        </tbody></table>
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="height: 30px;">
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <span id="lblmsz" class="ETYKIETA_SZARA">(c) Ministerstwo Spraw Zagranicznych | </span>
+                    <a id="EKONSULAT_Hyperlink2" class="HL_SZARY" href="https://secure.e-konsulat.gov.pl/NotaPrawna/NotaPrawna.aspx">Terms and conditions</a>
+                    <span id="EKONSULAT_Etykieta7" class="ETYKIETA_SZARA"> | </span>
+
+
+                </td>
+            </tr>
+            </tbody></table>
+
+        <div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        //<![CDATA[
+        Sys.Application.add_init(function() {
+            $create(AjaxControlToolkit.NoBotBehavior, {"ChallengeScript":"var e = document.getElementById(\u0027cp_NoBotID_pcnb\u0027); e.offsetWidth + e.offsetHeight;","ClientStateFieldID":"cp_NoBotID_NoBotID_NoBotExtender_ClientState","id":"cp_NoBotID_NoBotID_NoBotExtender"}, null, null, $get("cp_NoBotID_NoBotID_NoBotLabel"));
+        });
+        //]]>
+    </script>
+</form>
+
+
+</body></html>

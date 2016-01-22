@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lack of available dates to 2016-02-03</title>
+</head>
+<body>
+<h1 style="font-size: xx-large"><center id="status">Lack of available dates to ...</center></h1>
+<script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+<script>
+    var myFirebaseRef = new Firebase("http://burning-fire-6341.firebaseio.com/");
+    var audio = new Audio('sirena.mp3');
+    myFirebaseRef.on("value", function(snapshot) {
+        console.log(snapshot.val()[0]+","+snapshot.val()[1]);  // Alerts "San Francisco"
+        document.getElementById('status').innerHTML=snapshot.val()[1];
+        if (snapshot.val()[0]==='#EANF#' && snapshot.val()[1]==='#EANF#'){
+            //http://stackoverflow.com/questions/9419263/playing-audio-with-javascript
+
+            audio.loop=true;
+            audio.play();
+            alert('fire');
+            audio.loop=false;
+        }
+    });
+</script>
+</body>
+</html>
