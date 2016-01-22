@@ -6,12 +6,17 @@
 </head>
 <body>
 <h1 style="font-size: xx-large"><center id="status">Lack of available dates to ...</center></h1>
+<audio id="au">
+    <source src="sirena.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
 <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
 <script>
     var myFirebaseRef = new Firebase("http://burning-fire-6341.firebaseio.com/");
-    var audio = new Audio('sirena.mp3');
+    var audio = document.getElementById("au");
     myFirebaseRef.on("value", function(snapshot) {
-        console.log(snapshot.val()[0]+","+snapshot.val()[1]);  // Alerts "San Francisco"
+        console.log(snapshot.val()[0]+","+snapshot.val()[1]); 
         document.getElementById('status').innerHTML=snapshot.val()[1];
         if (snapshot.val()[0]==='#EANF#' && snapshot.val()[1]==='#EANF#'){
             //http://stackoverflow.com/questions/9419263/playing-audio-with-javascript
