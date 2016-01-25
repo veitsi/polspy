@@ -16,12 +16,12 @@
 <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
 <script>
     var myFirebaseRef = new Firebase("http://burning-fire-6341.firebaseio.com/");
-    function updateStatus(a, b){
-        myFirebaseRef.set([a,b]);
+    function updateStatus(a, b, time){
+        myFirebaseRef.set([a,b, time]);
         return null;
     }
     frm.onsubmit=function(){
-        updateStatus(bca.value,bda.value);
+        updateStatus(bca.value,bda.value, bta.value);
     }
 </script>
 </body>
