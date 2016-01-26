@@ -13,9 +13,10 @@
 
 <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
 <script>
+    alert(city);
     var myFirebaseRef = new Firebase("http://burning-fire-6341.firebaseio.com/");
     var audio = document.getElementById("au");
-    myFirebaseRef.on("value", function(snapshot) {
+    myFirebaseRef.child('status').child('89').on("value", function(snapshot) {
         console.log(snapshot.val()[0]+","+snapshot.val()[1]);
         document.getElementById('status').innerHTML=snapshot.val()[1];
         if (snapshot.val()[0]==='#EANF#' && snapshot.val()[1]==='#EANF#'){

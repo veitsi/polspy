@@ -8,22 +8,37 @@
 <form method="get" id="frm">
     badcaptcha:<input type="text" size="12" name="badcaptcha" id="badcaptcha" value="#EANF#"><br>
     busy:<input type="text" size="12" name="busy" id="busy" value="Brak terminów do dnia  2016-02-08">
-    time:<input type="text" size="12" name="time" id="time" value="25.01_16:50">
-    city:<input type="text" size="12" name="city" id="city" value="0">
+    time:<input type="text" size="12" name="time" id="time" value="25-01 16:50">
+    city:<input type="text" size="12" name="city" id="city" value="89">
+    <input type="submit">
 
-    <input type="submit" value="recognize" id="btn1">
+    <input type="button" value="recognize" id="btn1">
 </form>
 
 <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
 <script>
     var myFirebaseRef = new Firebase("http://burning-fire-6341.firebaseio.com/");
-    function updateStatus(a, b, time, city){
-        myFirebaseRef.child('0').set([a,b, time]);
-        console.log(a,b,time);
+
+    //myFirebaseRef.child('log').child(city).child(time).set(['#EANF#','brak do','08.02']);
+
+    function updateStatus(a, b, tm, ct){
+        console.log(a, b, tm, ct);
+        myFirebaseRef.child('status').child(ct).set([a,b, tm]);
+        var possible=(a==='#EANF#')&&(b==='#EANF#');
+        var nextDate="";
+        if (b.length>6) {nextDate= b.substring(23)}
+        console.log(tm, possible, nextDate, a);
+        myFirebaseRef.child('log').child(ct).child(tm).set([possible,nextDate,a]);
         return null;
     }
-    frm.onsubmit=function(){
+    btn1.onclick=function(){
         updateStatus(badcaptcha.value,busy.value, time.value, city.value);
+    };
+    function initBase(){
+        myFirebaseRef.set({
+            status:[0,0],
+            log:[0,0]
+        });
     }
 </script>
 </body>
