@@ -6,6 +6,16 @@
 </head>
 <body>
 <h1 style="font-size: xx-large"><center id="status">Lack of available dates to ...</center></h1>
+<form id="frm">
+    <center>
+        <select name="cityslct">
+            <option value="89">Kyiv</option>
+            <option value="92">Lviv</option>
+        </select>
+    </center>
+</form>
+
+
 <audio id="au">
     <source src="sirena.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
@@ -13,10 +23,11 @@
 
 <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
 <script>
-    alert(city);
+    var city='89';
+    console.log(city);
     var myFirebaseRef = new Firebase("http://burning-fire-6341.firebaseio.com/");
     var audio = document.getElementById("au");
-    myFirebaseRef.child('status').child('89').on("value", function(snapshot) {
+    myFirebaseRef.child('status').child(city).on("value", function(snapshot) {
         console.log(snapshot.val()[0]+","+snapshot.val()[1]);
         document.getElementById('status').innerHTML=snapshot.val()[1];
         if (snapshot.val()[0]==='#EANF#' && snapshot.val()[1]==='#EANF#'){
@@ -29,6 +40,10 @@
             audio.loop=false;
         }
     });
+    frm.cityslct.onchange=function(){
+        console.log(this.value);
+        city=this.value;
+    }
 </script>
 </body>
 </html>
