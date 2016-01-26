@@ -27,6 +27,7 @@
         if (b.length>6) {nextDate= b.substring(23)}
         console.log(tm, possible, nextDate, a);
         myFirebaseRef.child('log').child(ct).child(tm).set([possible,nextDate,a]);
+        if (possible){myFirebaseRef.child('success').child(ct).push(tm);}
         return null;
     }
     btn1.onclick=function(){
